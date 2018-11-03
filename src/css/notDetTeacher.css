@@ -18,7 +18,11 @@
 #jsNotDetWrap .det-top .header-intro {
   margin: 0 10px;
 }
-#jsNotDetWrap .det-top .notice-time {
+#jsNotDetWrap .det-top .header-intro .fabu-info {
+  padding: 0 20px;
+  margin-bottom: 4px;
+}
+#jsNotDetWrap .det-top .header-intro .notice-time {
   padding: 0 20px;
   font-size: 16px;
   color: #ccc;
@@ -32,7 +36,7 @@
   font-weight: normal;
   line-height: 1.2;
   font-size: 18px;
-  margin: 15px 0 4px 0;
+  margin: 10px 0 4px 0;
 }
 #jsNotDetWrap .det-top .notice-title::after {
   border-color: #ddd;

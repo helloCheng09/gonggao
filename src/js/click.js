@@ -54,6 +54,7 @@
                             </div>
                          `;
                     $("#yueBtn").append(html)
+                    $("#yueBtn").attr("yuedu-status", "1")
                 } else {
                     Alert('提交失败');
                 }
@@ -69,12 +70,10 @@
             status = $("#yueBtn").attr("yuedu-status")
             console.log("已阅读")
             if (status == 0) {
-                let flag = $("#yueBtn").attr("yuedu-status")
-                if (flag == 0) {
-                    root.appeal(idYuedu, urlYuedu)
-                    // root.initYuedu()
-                    console.log("已阅读")
-                }
+                root.appeal(idYuedu, urlYuedu)
+                // root.initYuedu()
+            } else {
+                return false
             }
         })
     }

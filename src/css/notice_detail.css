@@ -17,8 +17,9 @@
 #xzNotDetWrap .det-top .header-intro {
   margin: 0 10px;
 }
-#xzNotDetWrap .det-top .header-intro .fabu-info {
-  margin-bottom: 6px;
+#xzNotDetWrap .det-top .fabu-info {
+  padding: 0 20px;
+  margin-bottom: 4px;
 }
 #xzNotDetWrap .det-top .notice-time {
   padding: 0 20px;
@@ -26,7 +27,7 @@
   color: #ccc;
 }
 #xzNotDetWrap .det-top .notice-title h3 {
-  padding: 0 15px;
+  padding: 0 15px 10px;
   font-weight: normal;
   line-height: 1.2;
   font-size: 18px;
@@ -100,7 +101,7 @@
 }
 #xzNotDetWrap .det-bot .fankui-right {
   flex: 1;
-  padding-top: 8px;
+  padding: 10px 0;
   margin-right: 10px;
 }
 #xzNotDetWrap .det-bot .fankui-right::after {
@@ -123,7 +124,6 @@
   margin-bottom: 4px;
 }
 #xzNotDetWrap .det-bot .container {
-  padding: 0 10px;
   line-height: 1.3;
 }
 #xzNotDetWrap .little-avatar {
