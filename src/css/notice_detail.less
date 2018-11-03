@@ -3,7 +3,6 @@
     min-height: 100vh;
     background-color: #f7f7f7;
     .det-top {
-        margin-bottom: 20px;
         background-color: #fff;
         .notice-detail {
             .titile-show {
@@ -16,13 +15,18 @@
             }
            
         }
+        .header-intro{
+            margin: 0 10px;
+            .fabu-info{
+                margin-bottom: 6px;
+            }
+        }
         .notice-time{
             padding: 0 20px;
             font-size: 16px;
             color: #ccc;
         }
         .notice-title {
-            margin-bottom: 12px;
             h3 {
                 padding: 0 15px;
                 font-weight: normal;
@@ -30,6 +34,12 @@
                 font-size: 18px;
                 margin: 15px 0 4px 0;
             }
+        }
+        .notice-title::after{
+            border-color: #ddd;
+        }
+        .notice-text::after{
+            border-color: #ddd;
         }
         .notice-text {
             padding-bottom: 12px;
@@ -40,6 +50,7 @@
                     font-size: 16px;
                     line-height: 1.3;
                     text-align: left;
+                    word-break: break-all;
                     margin-bottom: 8px;
                 }
                 img {
@@ -50,19 +61,23 @@
         }
     }
     .det-bot {
+        margin-top: 20px;
+        margin-bottom: 10px;
         background: #fff;
         .tag-list {
             display: flex;
             text-align: center;
-            border: 1px solid #f7f7f7;
             .tag-item {
                 position: relative;
                 width: 50%;
                 line-height: 2;
                 margin: 10px;
             }
+            .tag-item:before{
+                border-color: #ddd;
+            }
             .tag-item:nth-of-type(1) {
-                border-right: 1px solid #ddd;
+                // border-right: 1px solid #ddd;
             }
             .selected {
                 color: rgb(88, 203, 248);
@@ -71,11 +86,15 @@
                 content: '';
                 position: absolute;
                 bottom: -2px;
-                left: 58px;
+                left: 50%;
+                transform: translateX(-50%);
                 height: 2px;
                 width: 50px;
                 background-color: #58cbf8;
             }
+        }
+        .tag-list::after {
+            border-color:#ddd;
         }
         .detail-panel {
             .panel-chayue {}
@@ -84,8 +103,9 @@
         .chayue-item {
             display: flex;
             align-items: center;
-            border-bottom: 1px solid #f7f7f7;
-           
+        }
+        .chayue-item::after{
+            border-color: #ddd;
         }
         .chayue-right {
             flex: 1;
@@ -98,7 +118,9 @@
             flex: 1;
             padding-top: 8px;
             margin-right: 10px;
-            border-bottom: 1px solid #f7f7f7;
+        }
+        .fankui-right::after {
+            border-color: #ddd;
         }
         .fankui-item {
             display: flex;
@@ -115,7 +137,7 @@
 
         }
         .chayue-name{
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.2;
             margin-bottom: 4px;
         }

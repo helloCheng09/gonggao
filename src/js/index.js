@@ -6,16 +6,17 @@ console.log($)
 /*************************************************************** */
 
 // 校长 查看公告详情 
-if($("#xzNotDetWrap").length){
+if ($("#xzNotDetWrap").length) {
     root.toggleTag()
-}
+} else if ($("#teaNotListWrap").length) {
+    // 教师 查看公告列表 
 
-/*************************************************************** */
-
-// 教师 查看公告列表 
-if($("#teaNotListWrap").length){
-}
-
-// 教师 查看公告详情 
-if($("#").length){
+} else if ($("#jsNotDetWrap").length) {
+    let textareEle = document.getElementsByTagName("textarea")
+    root.autoTextarea(textareEle[0])
+    // 教师 查看公告详情 
+    console.log("jjsjs")
+    root.initYuedu()
+    root.showForm()
+    root.closeForm()
 }

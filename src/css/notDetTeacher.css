@@ -1,0 +1,180 @@
+@import "mReset.css";
+#jsNotDetWrap {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+#jsNotDetWrap .det-top {
+  background-color: #fff;
+}
+#jsNotDetWrap .det-top .notice-detail .titile-show {
+  margin-bottom: 12px;
+}
+#jsNotDetWrap .det-top .notice-detail .bg-show {
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+}
+#jsNotDetWrap .det-top .header-intro {
+  margin: 0 10px;
+}
+#jsNotDetWrap .det-top .notice-time {
+  padding: 0 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+#jsNotDetWrap .det-top .notice-title {
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+#jsNotDetWrap .det-top .notice-title h3 {
+  padding: 0 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 18px;
+  margin: 15px 0 4px 0;
+}
+#jsNotDetWrap .det-top .notice-title::after {
+  border-color: #ddd;
+}
+#jsNotDetWrap .det-top .notice-text .text-box p {
+  margin: 0;
+  padding: 0 25px;
+  font-size: 16px;
+  line-height: 1.3;
+  word-break: break-all;
+  text-align: left;
+  margin-bottom: 8px;
+}
+#jsNotDetWrap .det-top .notice-text .text-box img {
+  display: inline-block;
+  max-width: 80%;
+}
+#jsNotDetWrap .det-top .yiyue-if {
+  display: flex;
+  justify-content: flex-end;
+}
+#jsNotDetWrap .det-top .yiyue-if .yiyue-ts {
+  margin: 0 20px;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: right;
+  vertical-align: middle;
+  color: #00a0fb;
+}
+#jsNotDetWrap .det-top .yiyue-if .yuedu-btn {
+  margin: 0 20px;
+  text-align: right;
+}
+#jsNotDetWrap .det-top .yiyue-if .yuedu-btn .not-yet label {
+  font-size: 16px;
+  color: red;
+}
+#jsNotDetWrap .det-top .yiyue-if .yuedu-btn .had-checked label {
+  font-size: 16px;
+  color: #00a0fb;
+}
+#jsNotDetWrap .det-top .yiyue-if .yuedu-btn img {
+  display: inline-block;
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+#jsNotDetWrap .check-bot {
+  padding: 10px 0;
+}
+#jsNotDetWrap .check-bot .fankui-item {
+  display: flex;
+  background-color: #fff;
+}
+#jsNotDetWrap .check-bot .chayue-time {
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #ccc;
+}
+#jsNotDetWrap .check-bot .container {
+  word-break: break-all;
+}
+#jsNotDetWrap .check-bot .fankui-right {
+  flex: 1;
+}
+#jsNotDetWrap .check-bot .fankui-right::after {
+  border-color: #ddd;
+}
+#jsNotDetWrap .check-bot .chayue-name {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+#jsNotDetWrap .check-bot .container {
+  padding: 0 10px 6px;
+  line-height: 1.3;
+}
+#jsNotDetWrap .little-avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+#jsNotDetWrap .respone-form {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#jsNotDetWrap .respone-form .click-block {
+  height: 240px;
+}
+#jsNotDetWrap .respone-form .form-one {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+}
+#jsNotDetWrap .respone-form .one-item:nth-of-type(1) {
+  height: 200px;
+  overflow-y: auto;
+}
+#jsNotDetWrap .respone-form .one-item:nth-of-type(1) .text-box {
+  padding: 30px 10px 10px;
+}
+#jsNotDetWrap .respone-form .one-item:nth-of-type(1) textarea {
+  width: 100%;
+  height: 150px;
+  outline: none;
+  padding: 4px 6px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+#jsNotDetWrap .respone-form .one-item:nth-of-type(2) {
+  text-align: right;
+}
+#jsNotDetWrap .respone-form .one-item:nth-of-type(2) input {
+  display: inline-block;
+  margin: 10px;
+  border: none;
+  outline: none;
+  width: 100px;
+  line-height: 3;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #00a0fb;
+  color: #fff;
+}
+.btn-respone {
+  line-height: 50px;
+  margin-top: -50px;
+  background-color: #00a0fb;
+  z-index: 999;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
