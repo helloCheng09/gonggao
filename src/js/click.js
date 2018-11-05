@@ -25,17 +25,16 @@
     // 教师公告详情 点击已阅读
     let clickYuedu = () => {
         let status
-        $("#yueBtn").find(".yuedu-img").on("click", function () {
-            status = $("#yueBtn").attr("yuedu-status")
-            console.log("已阅读")
-            if (status == 0) {
-                $("#yueBtn").attr("yuedu-status", "1")
-                $("#yueBtn").empty()
-                root.appeal(idYuedu, urlYuedu)
-                // root.initYuedu()
-                console.log("已阅读")
-            }
-        })
+        // $("#yueBtn").find(".yuedu-img").on("click", function () {
+        status = $("#yueBtn").attr("yuedu-status")
+        if (status == 0) {
+            $("#yueBtn").attr("yuedu-status", "1")
+            $("#yueBtn").empty()
+            root.appeal(idYuedu, urlYuedu)
+            // root.initYuedu()
+            console.log("初次阅读")
+        }
+        // })
     }
 
     // /public/yz/img

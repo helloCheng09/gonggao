@@ -19,4 +19,8 @@ if ($("#xzNotDetWrap").length) {
     root.initYuedu()
     root.showForm()
     root.closeForm()
+    root.clickYuedu()
+} else if ($("#lsBxWrap").length) {
+    let textareEle = document.getElementsByTagName("textarea")
+    root.autoTextarea(textareEle[0])
 }

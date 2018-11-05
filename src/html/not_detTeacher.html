@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+    <script src="../js/jQuery.min.js"></script>
     <div id="jsNotDetWrap">
         <div class="det-top">
             <div class="notice-detail">
@@ -46,7 +46,7 @@
 
             <!-- 已阅 -->
             <div class="yiyue-if">
-                <div class="yiyue-ts">* 点击确认阅读完毕公告</div>
+                <!-- <div class="yiyue-ts">* 点击确认阅读完毕公告</div> -->
                 <div class="yuedu-btn" id="yueBtn" yuedu-status="0">
                     <!-- -->
                 </div>
@@ -93,17 +93,16 @@
 
 
 
-<!-- 
- <script src="../js/jQuery.min.js"></script>
+
 <script src="../js/autoTextarae.js"> </script>
 <script src="../js/initPage.js"></script>
 <script src="../js/click.js"></script>
-<script src="../js/index.js"></script> -->
+<script src="../js/index.js"></script>
 <script>
     var idYuedu = "<?php echo $noticeInfo['id'];?>"
     var urlYuedu = "<?php echo site_url('mobile2/teacher/readNotice?memberid='.$this->memberid)?>";
 </script>
-<script src="../../build/js/all.js"></script>
+<!-- <script src="../../build/js/all.js"></script> -->
 
 
 

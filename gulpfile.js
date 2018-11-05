@@ -38,13 +38,13 @@ gulp.task("concat", () => {
 })      
 // js
 gulp.task("js", () => {
-     return gulp.src([folder.src + "js/click.js", folder.src + "js/index.js"])
-        .pipe(concat('all.js'))
+     return gulp.src([folder.src + "js/*.js" ])
+        // .pipe(concat('all.js'))
         .pipe(strip())
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(folder.build + "js"))
 })
 // layui
