@@ -23,4 +23,23 @@ if ($("#xzNotDetWrap").length) {
 } else if ($("#lsBxWrap").length) {
     let textareEle = document.getElementsByTagName("textarea")
     root.autoTextarea(textareEle[0])
+} else if (document.getElementById("notSend")) {
+    console.log("发送公告")
+
+    var html = `
+    `
+    $(".list-item").eq(2).after(html)
+    // 全选老师
+    root.selectAllTc()
+    // 反选老师
+    root.ReSelectTc()
+    // 单选老师
+    root.singleSelectTc()
+
+    // 获取所有数据
+    setTimeout(() => {
+        let data = $(".form_item").serializeArray()
+        console.log(data)
+    }, 5000);
+    
 }

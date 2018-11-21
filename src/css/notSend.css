@@ -1,0 +1,69 @@
+@import "mReset.css";
+#notSend .form_item .list-b .list-item {
+  position: relative;
+  font-size: 16px;
+  padding: 0 10px;
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+#notSend .form_item .list-b .member-p .control-b {
+  display: flex;
+  justify-content: flex-end;
+}
+#notSend .form_item .list-b .member-p .control-b .control-btn {
+  position: relative;
+  padding: 0 35px;
+  line-height: 2;
+}
+#notSend .form_item .list-b .member-p .control-b .control-btn::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  border: 1px solid #999;
+}
+#notSend .form_item .list-b .member-p .control-b .select::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 5px;
+  background-color: #6196ff;
+}
+#notSend .form_item .list-b .member-p .member-list-b .member-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#notSend .form_item .list-b .member-p .member-list-b .member-list .member-item {
+  width: 33.33%;
+  padding: 0 10px;
+  line-height: 1.8;
+}
+#notSend .form_item .list-b .member-p .member-list-b .member-list .member-item label {
+  position: relative;
+}
+#notSend .form_item .list-b .member-p .member-list-b .member-list .member-item label::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -39px;
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  border: 1px solid #999;
+}
+#notSend .form_item .list-b .member-p .member-list-b .member-list .member-item .select::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: -35px;
+  width: 14px;
+  height: 14px;
+  border-radius: 5px;
+  background-color: #6196ff;
+}
