@@ -6,13 +6,18 @@
   line-height: 40px;
   border-bottom: 1px solid #ddd;
 }
+#notSend .form_item .list-b .member-p {
+  padding: 8px 0 10px;
+  border-bottom: 1px solid #ddd;
+}
 #notSend .form_item .list-b .member-p .control-b {
   display: flex;
   justify-content: flex-end;
 }
 #notSend .form_item .list-b .member-p .control-b .control-btn {
   position: relative;
-  padding: 0 35px;
+  padding-right: 35px;
+  margin: 0 10px;
   line-height: 2;
 }
 #notSend .form_item .list-b .member-p .control-b .control-btn::before {
@@ -34,6 +39,9 @@
   height: 14px;
   border-radius: 5px;
   background-color: #6196ff;
+}
+#notSend .form_item .list-b .member-p .control-b .btn-text {
+  color: #6196ff;
 }
 #notSend .form_item .list-b .member-p .member-list-b .member-list {
   display: flex;

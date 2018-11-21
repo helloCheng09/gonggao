@@ -87,19 +87,21 @@
     // 全选老师
     let selectAllTc = () => {
         $(".select_all").on("click", function () {
+            var oEle = $(this).parents(".member-p")
             $(this).toggleClass("select")
             if ($(this).hasClass("select")) {
-                $(".member-item label").addClass("select")
-                $(".member-item input").attr("checked", true)
+                oEle.find(".member-item label").addClass("select")
+                oEle.find(".member-item input").attr("checked", true)
             } else {
-                $(".member-item label").removeClass("select")
-                $(".member-item input").attr("checked", false)
+                oEle.find(".member-item label").removeClass("select")
+                oEle.find(".member-item input").attr("checked", false)
             }
         })
     }
     // 反选老师
     let ReSelectTc = () => {
         $(".re_select").on("click", function () {
+            var oEle = $(this).parents(".member-p")
             $(this).toggleClass("select")
             // if ($(this).hasClass("select")) {
             //     $(".member-item label").addClass("select")
@@ -108,7 +110,7 @@
             //     $(".member-item label").removeClass("select")
             //     $(".member-item input").attr("checked", false)
             // }
-            $(".member-list .member-item").each(function () {
+            oEle.find(".member-list .member-item").each(function () {
                 let ele = $(this).children("label")
                 ele.toggleClass("select")
                 if (ele.hasClass("select")) {
@@ -132,6 +134,18 @@
         })
     }
 
+    // 选择老师分类
+    let selectTag = () => {
+
+        $(".list-b .list-item").each(function () {
+            $(this).on("click", function () {
+                $(this).next(".member-p").toggle()
+            })
+
+        })
+    }
+
+    root.selectTag = selectTag
     root.selectAllTc = selectAllTc
     root.ReSelectTc = ReSelectTc
     root.singleSelectTc = singleSelectTc
