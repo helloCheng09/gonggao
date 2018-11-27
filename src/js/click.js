@@ -103,13 +103,6 @@
         $(".re_select").on("click", function () {
             var oEle = $(this).parents(".member-p")
             $(this).toggleClass("select")
-            // if ($(this).hasClass("select")) {
-            //     $(".member-item label").addClass("select")
-            //     $(".member-item input").attr("checked", true)
-            // } else {
-            //     $(".member-item label").removeClass("select")
-            //     $(".member-item input").attr("checked", false)
-            // }
             oEle.find(".member-list .member-item").each(function () {
                 let ele = $(this).children("label")
                 ele.toggleClass("select")
